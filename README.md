@@ -2,9 +2,9 @@
 Module 17 Challenge Credit Risk Analysis for Supervised Machine Learning and Credit Risk
 
 ## Overview of the analysis: 
-This exercise was to apply machine learning to solve a real-world challenge of credit card risk.  I employed different techniques  to train and evaluate models with unbalanced classes.  There were a total of six algorithms used to evaluate the data given 
+This exercise was to apply machine learning to solve a real-world challenge of credit card risk.  I employed different techniques to train and evaluate models with unbalanced classes.  There was a total of six algorithms used to evaluate the data given 
 - Random Oversampling using `RandomOverSampler`
-- Oversampling usint `SMOTE`
+- Oversampling using `SMOTE`
 - Undersampling using `ClusterCentroids`
 - Combination of over- and undersampling using `SMOTEEN`
 - Ensemble Classifier `BalancedRandomForestClassifier`
@@ -29,7 +29,7 @@ This exercise was to apply machine learning to solve a real-world challenge of c
 
 ![Deliverable 3 Confusion Matrix](/images/D3ConfusionMatrix.png)
 
-### Imbalanced Classificaiton Report
+### Imbalanced Classification Report
 
 ![Deliverable 1 Imbalanced Classification Report](/images/D1Classification.png)
 
@@ -38,4 +38,4 @@ This exercise was to apply machine learning to solve a real-world challenge of c
 ![Deliverable 3 Imbalanced Classification Report](/images/D3ClassificationReport.png)
 
 ## Summary: 
-The results above show the differences that can be found in 
+The results above show the differences that can be found with varying precision and sensitivity for the different methods.  All methods have a high (1.00) precision for prediction of `low_risk`. However, in all cases the precision for `high_risk` is extremely low.  With all but the `Easy Ensemble Classifier` also having a not great scores for predicting `high_risk` sensitivity(recall).  This is reflected in the low `F1 scores` for `high_risk` as well.   For all these reasons I would not recommend any of the models to accurately predict credit risk.
